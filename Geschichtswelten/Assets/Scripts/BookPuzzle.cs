@@ -6,7 +6,8 @@ using UnityEngine.EventSystems;
 public class BookPuzzle : MonoBehaviour, IDragHandler
 {
     [SerializeField] private Transform[] fixTransform;
-
+    [SerializeField] private Transform current;
+    
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = eventData.position;
@@ -34,9 +35,25 @@ public class BookPuzzle : MonoBehaviour, IDragHandler
             }
         }
 
-        if (minDistance < 50)
+        if (minDistance < 60)
         {
-            transform.position = fixTransform[index].position;
+            if (fixTransform[index] != current)
+            {
+                GameObject snapBookExtern = fixTransform[index].GetComponentInParent<BookSnap>().book;
+                GameObject snapBookIntern = current.GetComponentInParent<BookSnap>().book;
+                
+                fixTransform[index].GetComponentInParent<BookSnap>().book = snapBookIntern;
+                current.GetComponentInParent<BookSnap>().book = snapBookExtern;
+                
+                snapBookIntern.transform.position = fixTransform[index].position;
+                snapBookExtern.transform.position = current.transform.position;
+                
+                Transform tmp = current;
+                current = fixTransform[index];
+                snapBookExtern.GetComponent<BookPuzzle>().current = tmp;
+            }
+
+            gameObject.transform.position = current.position;
         }
     }
     
