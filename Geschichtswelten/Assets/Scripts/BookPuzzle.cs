@@ -35,7 +35,7 @@ public class BookPuzzle : MonoBehaviour, IDragHandler
             }
         }
 
-        if (minDistance < 60)
+        if (minDistance < 40)
         {
             if (fixTransform[index] != current)
             {
