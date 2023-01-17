@@ -643,6 +643,7 @@ GameObject:
   - component: {fileID: 978003491}
   - component: {fileID: 978003490}
   - component: {fileID: 978003489}
+  - component: {fileID: 978003492}
   m_Layer: 5
   m_Name: MatteClosedButton
   m_TagString: Untagged
@@ -776,6 +777,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978003487}
   m_CullTransparentMesh: 1
+--- !u!114 &978003492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978003487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 999937348}
+          m_TargetAssemblyTypeName: CursorChange, Assembly-CSharp
+          m_MethodName: CursorOnButtonEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 999937348}
+          m_TargetAssemblyTypeName: CursorChange, Assembly-CSharp
+          m_MethodName: CursorOnButtonExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &999937343
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,3 +940,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: 4045d87741c8e1b41b000c0d77cfd694, type: 3}
+  cursorOnButton: {fileID: 2800000, guid: 309261506520b524cb80d1857fa88a07, type: 3}

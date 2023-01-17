@@ -738,3 +738,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: 4045d87741c8e1b41b000c0d77cfd694, type: 3}
+  cursorOnButton: {fileID: 2800000, guid: 309261506520b524cb80d1857fa88a07, type: 3}
