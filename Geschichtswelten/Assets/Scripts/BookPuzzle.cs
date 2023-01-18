@@ -46,14 +46,29 @@ public class BookPuzzle : MonoBehaviour, IDragHandler
                 current.GetComponentInParent<BookSnap>().book = snapBookExtern;
                 
                 snapBookIntern.transform.position = fixTransform[index].position;
-                snapBookExtern.transform.position = current.transform.position;
-                
+                StartCoroutine(SpawnTrail(snapBookExtern, current.transform.position));
+
+
                 Transform tmp = current;
                 current = fixTransform[index];
                 snapBookExtern.GetComponent<BookPuzzle>().current = tmp;
             }
 
             gameObject.transform.position = current.position;
+        }
+    }
+    
+    private IEnumerator SpawnTrail(GameObject objectToMove, Vector3 targetPosition)
+    {
+        float time = 0;
+        Vector3 startPosition = objectToMove.transform.position;
+
+        while (time < 1)
+        {
+            objectToMove.transform.position = Vector3.Lerp(startPosition, targetPosition, time);
+            time += Time.deltaTime / 0.3f;
+
+            yield return null;
         }
     }
     
