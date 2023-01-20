@@ -25,6 +25,11 @@ public class CodeInput : MonoBehaviour
         }
     }
     
+    public void Close()
+    {
+        gameObject.SetActive(false);
+    }
+    
     public void One()
     {
         if(!_correct) 
