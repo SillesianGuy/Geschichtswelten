@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UniGang.unity
     guid: 34e165804c5ed4e8c8fbb5ed21f9c997
+  - enabled: 1
+    path: Assets/Scenes/CityCenter.unity
+    guid: 30c175ec20cea4b0288cae46eae4665f
   m_configObjects: {}
