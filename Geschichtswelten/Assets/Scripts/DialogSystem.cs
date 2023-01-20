@@ -18,15 +18,13 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
     private void Awake()
     {
         string dialog = System.IO.File.ReadAllText(path);
+        dialog = dialog.Replace("%placeholder%", GameData.Instance.Name);
         _singleLine = dialog.Split("\n");
         _dialogText = new string[_singleLine.Length];
         _names = new string[_singleLine.Length];
         
         for(int i = 0; i < _singleLine.Length; i++)
         {
-            // TODO: für custom name zum ersetzen
-            //_names[i] = _dialogTexts[i].Split(' ')[0] == "placeholder" ? "neuer name" :  _dialogTexts[i].Split(' ')[0];
-            
             string[] words = _singleLine[i].Split(' ');
             
             _names[i] = words[0];
