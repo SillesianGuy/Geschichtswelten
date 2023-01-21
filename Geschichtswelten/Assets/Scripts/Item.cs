@@ -7,7 +7,7 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     public int id;
-    public string iemName;
+    public string itemName;
     public int value;
     public Sprite icon;
 }

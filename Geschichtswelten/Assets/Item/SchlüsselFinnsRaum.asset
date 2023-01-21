@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: "Schl\xFCsselFinnsRaum"
   m_EditorClassIdentifier: 
   id: 1
-  iemName: "Schl\xFCssel"
+  itemName: "Schl\xFCsselFinnsZimmer"
   value: 0
   icon: {fileID: 21300000, guid: 846ff9b5af9f3124d81fb9837ebbb6aa, type: 3}
