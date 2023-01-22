@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CityCenter.unity
     guid: 30c175ec20cea4b0288cae46eae4665f
+  - enabled: 1
+    path: "Assets/Scenes/H\xF6rsaal.unity"
+    guid: b13e53a7b12a32841aed705e757030a6
   m_configObjects: {}
