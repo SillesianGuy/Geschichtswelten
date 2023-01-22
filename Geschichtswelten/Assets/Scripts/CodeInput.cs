@@ -7,15 +7,21 @@ public class CodeInput : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textField;
     [SerializeField] private string code;
+    [SerializeField] private GameObject closedBox;
+    [SerializeField] private GameObject openBox;
+    [SerializeField] private GameObject codeButton;
     private string _currentCode = "";
     private bool _correct = false;
-    
+
     public void Submit()
     {
         if (code == _currentCode)
         {
             textField.color = Color.green;
             _correct = true;
+            closedBox.SetActive(false);
+            codeButton.SetActive(false);
+            openBox.SetActive(true);
         }
         else
         {
