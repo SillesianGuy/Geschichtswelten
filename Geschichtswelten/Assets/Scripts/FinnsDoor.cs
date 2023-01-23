@@ -14,6 +14,13 @@ public class FinnsDoor : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         Inventory inventoryScript = inventory.GetComponent<Inventory>();
+
+        if (_opened)
+        {
+            finnsRoom.SetActive(true);
+            gang.SetActive(false);
+            return;
+        }
         
         if (inventoryScript.selectedItem == null)
         {
@@ -29,9 +36,6 @@ public class FinnsDoor : MonoBehaviour, IPointerClickHandler
                 gang.SetActive(false);
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
             }
-        } else {
-            finnsRoom.SetActive(true);
-            gang.SetActive(false);
         }
     }
 }

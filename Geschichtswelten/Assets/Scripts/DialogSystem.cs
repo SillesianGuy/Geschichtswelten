@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -44,10 +45,6 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
     {
         if (gameObject.activeSelf)
         {
-            dialogName.text = _names[_counter];
-            dialogBox.text = _dialogText[_counter];
-            
-            _counter++;
             if (_counter == _dialogText.Length)
             {
                 gameObject.SetActive(false);
@@ -55,7 +52,12 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
                 dialogName.text = _names[0];
                 dialogBox.text = _dialogText[0];
                 GameData.Instance.InDialog = false;
+                return;
             }
+            dialogName.text = _names[_counter];
+            dialogBox.text = _dialogText[_counter];
+            
+            _counter++;
         }
     }
 }

@@ -4,7 +4,7 @@ public class GameData
 {
     private static GameData _instance;
     private bool _inDialog = false;
-    private string _name = "Sam";
+    private string _name = "Riven";
     private int _dialogID = 0;
     private List<int> _finishedDialogs = new List<int>();
     private List<Item> _items = new List<Item>();

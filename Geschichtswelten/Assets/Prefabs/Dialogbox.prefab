@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -108, y: 40.6}
+  m_AnchoredPosition: {x: -39.7, y: 23.6}
   m_SizeDelta: {x: 210.3405, y: 22.2526}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5740113209479695489
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.3
-  m_fontSizeBase: 22.3
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -170,8 +170,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.832307, y: -17.867706}
-  m_SizeDelta: {x: 420.6768, y: 75.6534}
+  m_AnchoredPosition: {x: -5.9742, y: -10}
+  m_SizeDelta: {x: 277.792, y: 51.5717}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5740113209945926928
 CanvasRenderer:
@@ -228,8 +228,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17
-  m_fontSizeBase: 17
+  m_fontSize: 13
+  m_fontSizeBase: 13
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -307,8 +307,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -160.51581}
-  m_SizeDelta: {x: 580.4153, y: 137.96838}
+  m_AnchoredPosition: {x: -27.7582, y: -170.1}
+  m_SizeDelta: {x: 364.6111, y: 137.9684}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5740113210037688092
 MonoBehaviour:
@@ -360,8 +360,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.8318894, y: 6.2490845}
-  m_SizeDelta: {x: 512.7971, y: 217.1674}
+  m_AnchoredPosition: {x: 0.000012398, y: 4.1345}
+  m_SizeDelta: {x: 345.3104, y: 146.2374}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5740113210374026666
 CanvasRenderer:

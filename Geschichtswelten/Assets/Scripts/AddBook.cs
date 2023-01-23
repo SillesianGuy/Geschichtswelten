@@ -22,23 +22,23 @@ public class AddBook : MonoBehaviour, IPointerClickHandler
         
         switch (inventoryScript.selectedItem.GetComponent<Image>().sprite.name)
         {
-            case "Buch1":
+            case "Buch1Sprite":
                 book1.SetActive(true);
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
                 break;
-            case "Buch2":
+            case "Buch2Sprite":
                 book2.SetActive(true);
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
                 break;
-            case "Buch3":
+            case "Buch3Sprite":
                 book3.SetActive(true);
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
                 break;
-            case "Buch4":
+            case "Buch4Sprite":
                 book4.SetActive(true);
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
                 break;
-            case "Buch5":
+            case "Buch5Sprite":
                 book5.SetActive(true);
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
                 break;

@@ -15,6 +15,7 @@ public class InventoryItem : MonoBehaviour, IPointerClickHandler
             inventoryScript.itemSlots[inventoryScript.takenSlots].GetComponent<Image>().sprite = gameObject.GetComponent<Image>().sprite;
             
             gameObject.SetActive(false);
+            Destroy(gameObject);
             
             inventoryScript.takenSlots++;
         }
