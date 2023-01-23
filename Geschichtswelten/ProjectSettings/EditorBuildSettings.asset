@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/H\xF6rsaal.unity"
     guid: b13e53a7b12a32841aed705e757030a6
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 64368ab41b20b4541b7194b38bb4ed17
   m_configObjects: {}
