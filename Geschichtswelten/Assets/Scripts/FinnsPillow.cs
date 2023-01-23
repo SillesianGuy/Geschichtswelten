@@ -2,13 +2,13 @@
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class APileOfMud : MonoBehaviour, IPointerClickHandler
+public class FinnsPillow : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private GameObject inventory;
-    [SerializeField] private Sprite aPileOfMudNaked;
-    [SerializeField] private GameObject book;
+    [SerializeField] private Sprite openPillow;
+    [SerializeField] private GameObject fetzen3;
     [SerializeField] private GameObject dialog;
-
+    
     public void OnPointerClick(PointerEventData eventData)
     {
         Inventory inventoryScript = inventory.GetComponent<Inventory>();
@@ -18,10 +18,10 @@ public class APileOfMud : MonoBehaviour, IPointerClickHandler
             return;
         }
 
-        if (inventoryScript.selectedItem.GetComponent<Image>().sprite.name == "Schaufel")
+        if (inventoryScript.selectedItem.GetComponent<Image>().sprite.name == "Messerchen")
         {
-            gameObject.GetComponent<Image>().sprite = aPileOfMudNaked;
-            book.SetActive(true);
+            gameObject.GetComponent<Image>().sprite = openPillow;
+            fetzen3.SetActive(true);
             inventoryScript.RemoveItem(inventoryScript.selectedItemId);
             if (dialog != null)
             {

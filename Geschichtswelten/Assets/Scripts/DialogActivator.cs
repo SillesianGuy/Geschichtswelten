@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -17,6 +18,10 @@ public class DialogActivator : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (dialogBox.gameObject.IsDestroyed())
+        {
+            return;
+        }
         if (tagName == "")
         {
             if(!GameData.Instance.InDialog && !GameData.Instance.FinishedDialogs.Contains(_dialogID)) {
