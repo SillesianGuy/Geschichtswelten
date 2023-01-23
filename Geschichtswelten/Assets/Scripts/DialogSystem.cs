@@ -4,21 +4,22 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Windows;
+using File = System.IO.File;
 
 public class DialogSystem : MonoBehaviour, IPointerClickHandler
 {
     
-    [SerializeField] private String path;
+    [SerializeField] private TextAsset text;
     [SerializeField] private TextMeshProUGUI dialogName;
     [SerializeField] private TextMeshProUGUI dialogBox;
     private int _counter = 1;
     private string[] _singleLine;
     private string[] _dialogText;
     private string[] _names;
-    
     private void Awake()
     {
-        string dialog = System.IO.File.ReadAllText(path);
+        string dialog = text.text;
         dialog = dialog.Replace("%placeholder%", GameData.Instance.Name);
         _singleLine = dialog.Split("\n");
         _dialogText = new string[_singleLine.Length];

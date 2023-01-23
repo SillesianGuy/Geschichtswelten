@@ -4167,7 +4167,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &416870383
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14887,7 +14887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ae17ad2aa2f424281dd6307a908612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: Assets/PillowDialog.txt
+  text: {fileID: 4900000, guid: 6f666ba7bd3845db84f5eb2453e09990, type: 3}
   dialogName: {fileID: 5740113210573699260}
   dialogBox: {fileID: 5740113208884042027}
 --- !u!224 &5740113208942256935
@@ -15398,7 +15398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ae17ad2aa2f424281dd6307a908612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: Assets/Hands.txt
+  text: {fileID: 4900000, guid: 0127c86515878f641972b39c69b046aa, type: 3}
   dialogName: {fileID: 5740113209530590347}
   dialogBox: {fileID: 5740113210129974556}
 --- !u!1 &5740113210129974554
@@ -15796,7 +15796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ae17ad2aa2f424281dd6307a908612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: Assets/NothingToSeeHere.txt
+  text: {fileID: 4900000, guid: 3ba7c8e8f7955654ebedd50a9c20aca0, type: 3}
   dialogName: {fileID: 5740113208968679233}
   dialogBox: {fileID: 5740113210524118742}
 --- !u!222 &5740113210573699259
