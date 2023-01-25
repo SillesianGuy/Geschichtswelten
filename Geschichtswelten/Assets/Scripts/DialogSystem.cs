@@ -17,6 +17,9 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
     private string[] _singleLine;
     private string[] _dialogText;
     private string[] _names;
+    
+    public delegate void DialogEnd();
+    public static event DialogEnd OnDialogEnd;
     private void Awake()
     {
         string dialog = text.text;
@@ -53,6 +56,7 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
                 dialogName.text = _names[0];
                 dialogBox.text = _dialogText[0];
                 GameData.Instance.InDialog = false;
+                OnDialogEnd?.Invoke();
                 return;
             }
             dialogName.text = _names[_counter];
