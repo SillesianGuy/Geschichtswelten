@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class DialogSwitch : MonoBehaviour
 {
-    [SerializeField] private GameObject switchObject;
+    [SerializeField] private GameObject[] switchObject;
     private void Awake()
     {
         DialogSystem.OnDialogEnd += Switch;
@@ -11,7 +11,10 @@ public class DialogSwitch : MonoBehaviour
 
     private void Switch()
     {
-        switchObject.SetActive(true);
+        foreach (var gameObj in switchObject)
+        {
+            gameObj.SetActive(true);
+        }
         gameObject.SetActive(false);
         DialogSystem.OnDialogEnd -= Switch;    
     }

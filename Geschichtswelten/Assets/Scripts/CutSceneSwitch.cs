@@ -6,7 +6,7 @@ using UnityEngine.Video;
 
 public class CutSceneSwitch : MonoBehaviour
 {
-    [SerializeField] private GameObject switchObject;
+    [SerializeField] private GameObject[] switchObject;
     [SerializeField] private int seconds;
     
     private void Awake()
@@ -17,7 +17,10 @@ public class CutSceneSwitch : MonoBehaviour
     private IEnumerator WaitTillSwitch()
     {
         yield return new WaitForSeconds(seconds);
-        switchObject.SetActive(true);
+        foreach (var gameObj in switchObject)
+        {
+            gameObj.SetActive(true);
+        }
         gameObject.SetActive(false);
     }
 } 
