@@ -1,0 +1,10 @@
+0 %placeholder% Guten Tag, General!
+General %placeholder%. Kann ich dir irgendwie helfen?
+%placeholder% Haben Sie zufälligerweise Finn gesehen?
+General Glücklicherweise nicht, ich habe gerade geholfen das Boot für meine diplomatische Reise auszurüsten und bin gerade erst vor kurzem auf der Patrouille.
+1 General Wieso fragen Sie nach ihm? Hat er schon wieder etwas vor?
+%placeholder% Nicht, dass ich wüsste, Sir. Ich muss mir ein paar Vorlesungsnotizen von ihm ausleihen. Wohin geht ihre Reise denn? Nach Nerpy?
+0 General Nein, der Ort für die Friedensgespräche wurde diesmal in Redarien festgelegt. Ich bitte dich mir jedoch Bescheid zu sagen, wenn du irgendetwas verdächtiges bemerkst.
+1 General Du weißt ja, wie Finns letzte kleine Aktion zu 5 Verletzten geführt hat
+%placeholder% Ja, Sir. Ich wünsche ihnen eine angenehme Reise.
+0 General Danke, pass auf dich auf, Riven.

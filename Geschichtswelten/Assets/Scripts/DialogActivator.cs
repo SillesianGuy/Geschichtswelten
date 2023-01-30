@@ -8,11 +8,11 @@ public class DialogActivator : MonoBehaviour, IPointerClickHandler
     [SerializeField] private GameObject dialogBox;
     [SerializeField] private string tagName = "";
     [SerializeField] private bool repeat = false;
-    private int _dialogID = 0;
+    [NonSerialized] public int dialogID = 0;
 
     private void Start()
     {
-        _dialogID = GameData.Instance.DialogID;
+        dialogID = GameData.Instance.DialogID;
         GameData.Instance.DialogID++;
     }
 
@@ -24,30 +24,30 @@ public class DialogActivator : MonoBehaviour, IPointerClickHandler
         }
         if (tagName == "")
         {
-            if(!GameData.Instance.InDialog && !GameData.Instance.FinishedDialogs.Contains(_dialogID)) {
+            if(!GameData.Instance.InDialog && !GameData.Instance.FinishedDialogs.Contains(dialogID)) {
                 dialogBox.gameObject.SetActive(true);
                 GameData.Instance.InDialog = true;
-                GameData.Instance.FinishedDialogs.Add(_dialogID);
+                GameData.Instance.FinishedDialogs.Add(dialogID);
             }else if (!GameData.Instance.InDialog && repeat)
             {
                 dialogBox.gameObject.SetActive(true);
                 GameData.Instance.InDialog = true;
-                GameData.Instance.FinishedDialogs.Add(_dialogID);
+                GameData.Instance.FinishedDialogs.Add(dialogID);
             }
         } else if (!gameObject.CompareTag(tagName))
         {
             gameObject.tag = tagName;
         }else if (gameObject.CompareTag(tagName))
         {
-            if(!GameData.Instance.InDialog && !GameData.Instance.FinishedDialogs.Contains(_dialogID)) {
+            if(!GameData.Instance.InDialog && !GameData.Instance.FinishedDialogs.Contains(dialogID)) {
                 dialogBox.gameObject.SetActive(true);
                 GameData.Instance.InDialog = true;
-                GameData.Instance.FinishedDialogs.Add(_dialogID);
+                GameData.Instance.FinishedDialogs.Add(dialogID);
             }else if (!GameData.Instance.InDialog && repeat)
             {
                 dialogBox.gameObject.SetActive(true);
                 GameData.Instance.InDialog = true;
-                GameData.Instance.FinishedDialogs.Add(_dialogID);
+                GameData.Instance.FinishedDialogs.Add(dialogID);
             }
         }
     }

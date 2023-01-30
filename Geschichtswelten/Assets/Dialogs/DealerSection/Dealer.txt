@@ -1,0 +1,18 @@
+0 %placeholder% Hay Hildegard
+3 Hildegard Schau dir mal an, wer mir wieder einen Besuch abstattet! Hallo Riven, wie geht's dir?
+%placeholder% Abseits der Alpträume ganz okay, ein bisschen seltsamer Tag heute…Wie gehts dir, Hildegard? Was gibt es Neues?
+Hildegard Mir geht es prächtig, das Geschäft blüht. Habe erst gestern neue Waren von der anderen Seite bekommen, vielleicht willst du einen Blick darauf werfen? Ich habe auch etwas stärkere Schlafmittel, wenn dich das interessiert?
+Hildegard Meine Gruppe hat sich gestern an Lord Wilsons Haus versucht und sind erfolgreich gewesen.
+%placeholder% Vielleicht solltest du nicht so laut sein, auf dem Marktplatz steht der General…
+0 Hildegard Hast du den neuen Schmuck seiner Töchter gesehen? Ich glaube, der General drückt ein Auge zu…Wenn wir gerade von den Töchtern des Generals sprechen, wusstest du, dass die leibliche Mutter seiner Adoptivtochter anscheinend neulich verunglückt sein soll? 
+Hildegard Wenn du mich fragst, bezweifle ich, dass es ein Unglück war…
+%placeholder% Das ist wirklich sehr interessant Tante, aber ich bin heute etwas unter Druck. Finn ist echt komisch drauf, er benimmt sich wieder sehr verdächtig. Hast du da irgendwas gehört?
+3 Hildegard Wenn du auf irgendwen von meinen speziellen Kunden anspielst, dann muss ich dich leider enttäuschen.
+%placeholder% Jedenfalls, hast du eventuell eine Schaufel für mich? Ich will die Handschuhe, die du mir geschenkt hast, nicht jetzt schon ruinieren.
+Hildegard Ich habe noch eine da, nimm sie dir einfach…Ach ja, und nimm gleich das noch mit!
+0 %placeholder% Was ist das?
+Hildegard Habe ich mir mal von Finn ausgeliehen, kannst du es ihm einfach wieder zurück geben? Da geht es um irgendeinen Gott, der der Legende nach tief im Ozean gefangen wurde, sich anscheinend noch immer da aufhält und jeden in den Wahnsinn treibt...
+Hildegard ...der der Insel zu nahe kommt ... Aber das ist wahrscheinlich nur eine Geschichte, um die meisten Leute von Hornbol fern zu halten, weißt du, ein Vögelchen hat mir nämlich gezwitschert...
+2 %placeholder% Tante Hildegard, ich muss jetzt wirklich los…
+Hildegard Ist ja gut, niemand hat Zeit mit mir zu reden. Nimm deine Schaufel und verschwinde, aber wenn ich dich morgen nicht für eine Tasse Tee bei mir sehe, dann werde ich grantig.
+%placeholder% Versprochen!

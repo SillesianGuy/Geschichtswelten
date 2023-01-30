@@ -8,6 +8,7 @@ public class FinnsDoor : MonoBehaviour, IPointerClickHandler
     [SerializeField] private GameObject inventory;
     [SerializeField] private GameObject finnsRoom;
     [SerializeField] private GameObject gang;
+    [SerializeField] private GameObject dialog;
     
     private bool _opened = false;
     
@@ -31,6 +32,7 @@ public class FinnsDoor : MonoBehaviour, IPointerClickHandler
         {
             if (inventoryScript.selectedItem.GetComponent<Image>().sprite.name == "SchlüsselFinnsZimmer")
             {
+                Destroy(dialog);
                 _opened = true;
                 finnsRoom.SetActive(true);
                 gang.SetActive(false);

@@ -8,6 +8,8 @@ public class BookPuzzle : MonoBehaviour, IDragHandler
     [SerializeField] private Transform[] fixTransform;
     [SerializeField] private Transform current;
     
+    public delegate void PuzzleSnapped();
+    public static event PuzzleSnapped OnPuzzleSnapped;
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = eventData.position;
@@ -52,6 +54,8 @@ public class BookPuzzle : MonoBehaviour, IDragHandler
                 Transform tmp = current;
                 current = fixTransform[index];
                 snapBookExtern.GetComponent<BookPuzzle>().current = tmp;
+
+                OnPuzzleSnapped?.Invoke();
             }
 
             gameObject.transform.position = current.position;
