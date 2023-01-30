@@ -13,6 +13,7 @@ public class BookPuzzleFinish : MonoBehaviour
     private void Awake()
     {
         BookPuzzle.OnPuzzleSnapped += PuzzleCheck;
+        AddFetzen.OnFetzenAdded += PuzzleCheck;
     }
 
     private void PuzzleCheck()
@@ -24,11 +25,17 @@ public class BookPuzzleFinish : MonoBehaviour
             {
                 result = false;
             }
+
+            if (!correctBookOrder[i].activeSelf)
+            {
+                result = false;
+            }
         }
 
         if (result)
         {
             BookPuzzle.OnPuzzleSnapped -= PuzzleCheck;
+            AddFetzen.OnFetzenAdded -= PuzzleCheck;
             dialog.SetActive(true);
             GameData.Instance.InDialog = true;
         }

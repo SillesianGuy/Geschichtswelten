@@ -10,6 +10,7 @@ public class CodeInput : MonoBehaviour
     [SerializeField] private GameObject closedBox;
     [SerializeField] private GameObject openBox;
     [SerializeField] private GameObject codeButton;
+    [SerializeField] private GameObject dialog;
     private string _currentCode = "";
     private bool _correct = false;
 
@@ -22,6 +23,8 @@ public class CodeInput : MonoBehaviour
             closedBox.SetActive(false);
             codeButton.SetActive(false);
             openBox.SetActive(true);
+            dialog.SetActive(true);
+            GameData.Instance.InDialog = true;
         }
         else
         {

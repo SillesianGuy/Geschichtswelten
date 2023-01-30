@@ -1,5 +1,5 @@
 0 %placeholder% Hay Hildegard
-3 Hildegard Schau dir mal an, wer mir wieder einen Besuch abstattet! Hallo Riven, wie geht's dir?
+3 Hildegard Schau dir mal an, wer mir wieder einen Besuch abstattet! Hallo %placeholder%, wie geht's dir?
 %placeholder% Abseits der Alpträume ganz okay, ein bisschen seltsamer Tag heute…Wie gehts dir, Hildegard? Was gibt es Neues?
 Hildegard Mir geht es prächtig, das Geschäft blüht. Habe erst gestern neue Waren von der anderen Seite bekommen, vielleicht willst du einen Blick darauf werfen? Ich habe auch etwas stärkere Schlafmittel, wenn dich das interessiert?
 Hildegard Meine Gruppe hat sich gestern an Lord Wilsons Haus versucht und sind erfolgreich gewesen.

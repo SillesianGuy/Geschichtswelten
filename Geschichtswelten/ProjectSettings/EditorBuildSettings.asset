@@ -9,33 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: f467852e1f3be4fbbb795578ca636623
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/City.unity
-    guid: d97d20ac14bab438b879101edbad533b
-  - enabled: 1
-    path: Assets/Scenes/Dealer.unity
-    guid: 25844e7096ca9431f9b9b9c165d731b7
-  - enabled: 1
-    path: Assets/Scenes/FinnsRoom.unity
-    guid: a7fbb7b8787f146a3aa71ff3f535a0f5
-  - enabled: 1
-    path: Assets/Scenes/Gang.unity
-    guid: 18aa4e3ac3e3544d5a1e6cf5c20bd1ef
-  - enabled: 1
-    path: Assets/Scenes/EndScreen.unity
-    guid: 93fd473790e9248edaa19815e87492f7
-  - enabled: 1
-    path: Assets/Scenes/UniGang.unity
-    guid: 34e165804c5ed4e8c8fbb5ed21f9c997
-  - enabled: 1
-    path: Assets/Scenes/CityCenter.unity
-    guid: 30c175ec20cea4b0288cae46eae4665f
-  - enabled: 1
-    path: "Assets/Scenes/H\xF6rsaal.unity"
-    guid: b13e53a7b12a32841aed705e757030a6
-  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 64368ab41b20b4541b7194b38bb4ed17
   m_configObjects: {}

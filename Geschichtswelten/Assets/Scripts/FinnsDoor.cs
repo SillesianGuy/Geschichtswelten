@@ -18,8 +18,10 @@ public class FinnsDoor : MonoBehaviour, IPointerClickHandler
 
         if (_opened)
         {
-            finnsRoom.SetActive(true);
-            gang.SetActive(false);
+            if(!GameData.Instance.InDialog) {
+                finnsRoom.SetActive(true);
+                gang.SetActive(false);
+            }
             return;
         }
         
@@ -32,10 +34,13 @@ public class FinnsDoor : MonoBehaviour, IPointerClickHandler
         {
             if (inventoryScript.selectedItem.GetComponent<Image>().sprite.name == "SchlüsselFinnsZimmer")
             {
-                Destroy(dialog);
                 _opened = true;
-                finnsRoom.SetActive(true);
-                gang.SetActive(false);
+                if (!GameData.Instance.InDialog)
+                {
+                    Destroy(dialog);
+                    finnsRoom.SetActive(true);
+                    gang.SetActive(false);
+                }
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
             }
         }

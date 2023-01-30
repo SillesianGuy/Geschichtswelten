@@ -1,5 +1,5 @@
 %placeholder% Als ich den Gang wieder betrat, standen die Töchter des Generals im Gang.
-Morena Ah Riven, wir haben dich gesucht!
+Morena Ah %placeholder%, wir haben dich gesucht!
 %placeholder% Hey, was gibts?
 Siva Wir haben Finn vorhin gesehen, wie er hier irgendwas verbuddelt hat?
 Morena Wir wollten fragen, ob du vielleicht mehr weißt? Wir dachten, er hätte damit aufgehört.

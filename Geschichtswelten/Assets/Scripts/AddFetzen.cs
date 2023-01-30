@@ -12,6 +12,9 @@ public class AddFetzen : MonoBehaviour, IPointerClickHandler
     [SerializeField] private GameObject fetzen5;
     [SerializeField] private GameObject fetzen6;
     
+    public delegate void FetzenAdded();
+    public static event FetzenAdded OnFetzenAdded;
+    
     public void OnPointerClick(PointerEventData eventData)
     {
         Inventory inventoryScript = inventory.GetComponent<Inventory>();
@@ -26,16 +29,19 @@ public class AddFetzen : MonoBehaviour, IPointerClickHandler
             case "Fetzen1":
                 fetzen1.SetActive(true);
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
+                OnFetzenAdded?.Invoke();
                 break;
             case "Fetzen2":
                 fetzen2.SetActive(true);
                 fetzen4.SetActive(true);
                 fetzen5.SetActive(true);
                 fetzen6.SetActive(true);
+                OnFetzenAdded?.Invoke();
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
                 break;
             case "Fetzen3":
                 fetzen3.SetActive(true);
+                OnFetzenAdded?.Invoke();
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
                 break;
         }
