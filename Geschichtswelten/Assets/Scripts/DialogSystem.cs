@@ -112,9 +112,11 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
             if (_counter == _dialogText.Length)
             {
                 gameObject.SetActive(false);
-                foreach (var moodPicture in moodPictures)
-                {
-                    moodPicture.SetActive(false);
+                if(moods) {
+                    foreach (var moodPicture in moodPictures)
+                    {
+                        moodPicture.SetActive(false);
+                    }
                 }
                 _counter = 1;
                 dialogName.text = _names[0];

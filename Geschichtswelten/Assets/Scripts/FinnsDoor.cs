@@ -32,7 +32,7 @@ public class FinnsDoor : MonoBehaviour, IPointerClickHandler
 
         if (!_opened)
         {
-            if (inventoryScript.selectedItem.GetComponent<Image>().sprite.name == "SchlüsselFinnsZimmer")
+            if (inventoryScript.selectedItem.GetComponent<Image>().sprite.name == "Schluessel")
             {
                 _opened = true;
                 if (!GameData.Instance.InDialog)
