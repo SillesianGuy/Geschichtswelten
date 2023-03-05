@@ -2,12 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 public class CutSceneSwitch : MonoBehaviour
 {
     [SerializeField] private GameObject[] switchObject;
     [SerializeField] private int seconds;
+    [SerializeField] private bool scene;
+    [SerializeField] private int sceneId;
     
     private void Awake()
     {
@@ -17,10 +20,16 @@ public class CutSceneSwitch : MonoBehaviour
     private IEnumerator WaitTillSwitch()
     {
         yield return new WaitForSeconds(seconds);
-        foreach (var gameObj in switchObject)
-        {
-            gameObj.SetActive(true);
+        if(!scene) {
+            foreach (var gameObj in switchObject)
+            {
+                gameObj.SetActive(true);
+            }
+            gameObject.SetActive(false);
         }
-        gameObject.SetActive(false);
+        else
+        {
+            SceneManager.LoadSceneAsync(sceneId);
+        }
     }
 } 

@@ -7,6 +7,7 @@ public class BookPuzzle : MonoBehaviour, IDragHandler
 {
     [SerializeField] private Transform[] fixTransform;
     [SerializeField] private Transform current;
+    [SerializeField] private int maxSnapDistance = 40;
     
     public delegate void PuzzleSnapped();
     public static event PuzzleSnapped OnPuzzleSnapped;
@@ -37,7 +38,7 @@ public class BookPuzzle : MonoBehaviour, IDragHandler
             }
         }
 
-        if (minDistance < 40)
+        if (minDistance < maxSnapDistance)
         {
             if (fixTransform[index] != current)
             {

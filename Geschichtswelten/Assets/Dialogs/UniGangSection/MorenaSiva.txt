@@ -1,7 +1,7 @@
 %placeholder% Als ich den Gang wieder betrat, standen die Töchter des Generals im Gang.
 Morena Ah %placeholder%, wir haben dich gesucht!
 %placeholder% Hey, was gibts?
-Siva Wir haben Finn vorhin gesehen, wie er hier irgendwas verbuddelt hat?
+Siva Wir haben Finn vorhin gesehen, wie er hier irgendwas verbuddelt hat.
 Morena Wir wollten fragen, ob du vielleicht mehr weißt? Wir dachten, er hätte damit aufgehört.
 %placeholder% Finn hat etwas verbuddelt? Das erklärt seine dreckigen Hände…
 %placeholder% Womit genau hat er aufgehört? Löcher zu buddeln?

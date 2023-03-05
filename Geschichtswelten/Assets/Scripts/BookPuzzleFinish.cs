@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Serialization;
 
 public class BookPuzzleFinish : MonoBehaviour
@@ -6,9 +7,9 @@ public class BookPuzzleFinish : MonoBehaviour
     [SerializeField] private GameObject[] correctBookOrder;
     [SerializeField] private GameObject[] snaps;
     [SerializeField] private GameObject dialog;
-
-    public delegate void PuzzleFinished();
-    public static event PuzzleFinished OnPuzzleFinished;
+    [SerializeField] private bool gameFinish;
+    public delegate void GameFinished();
+    public static event GameFinished OnGameFinished;
 
     private void Awake()
     {
@@ -36,6 +37,10 @@ public class BookPuzzleFinish : MonoBehaviour
         {
             BookPuzzle.OnPuzzleSnapped -= PuzzleCheck;
             AddFetzen.OnFetzenAdded -= PuzzleCheck;
+            if(gameFinish) {
+                Debug.Log("test2");
+                OnGameFinished?.Invoke();
+            }
             dialog.SetActive(true);
             GameData.Instance.InDialog = true;
         }
