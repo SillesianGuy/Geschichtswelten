@@ -8,7 +8,7 @@ public class Finish : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip audioClip;
     [SerializeField] private GameObject ui;
-    private void Start()
+    private void Awake()
     {
         BookPuzzleFinish.OnGameFinished += Finished;
     }
