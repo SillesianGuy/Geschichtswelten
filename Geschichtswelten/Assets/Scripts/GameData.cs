@@ -8,6 +8,7 @@ public class GameData
     private int _dialogID = 0;
     private List<int> _finishedDialogs = new List<int>();
     private List<Item> _items = new List<Item>();
+    private float _currentVolume = 1f;
 
     private GameData()
     {
@@ -56,5 +57,11 @@ public class GameData
     {
         get => _items;
         set => _items = value;
+    }
+
+    public float CurrentVolume
+    {
+        get => _currentVolume;
+        set => _currentVolume = value;
     }
 }

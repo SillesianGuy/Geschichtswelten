@@ -2418,7 +2418,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1013162080}
-  - component: {fileID: 1013162079}
   m_Layer: 0
   m_Name: GameManagement
   m_TagString: Untagged
@@ -2426,19 +2425,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1013162079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013162078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aacaf3c53ddf947ae98239b32dd6976a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentVolume: 0
 --- !u!4 &1013162080
 Transform:
   m_ObjectHideFlags: 0
@@ -2653,6 +2639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f29a979a91a74bcba8948aa6711c580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 987805262}
   mixer: {fileID: 24100000, guid: 9b809ad9f57c04950a0b1aa0f1c968bc, type: 2}
 --- !u!114 &1128953926
 MonoBehaviour:

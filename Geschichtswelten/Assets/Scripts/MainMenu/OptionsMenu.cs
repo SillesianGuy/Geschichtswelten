@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,12 +7,17 @@ using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
 {
-    private Slider volumeSlider;
+    [SerializeField] private Slider volumeSlider;
     [SerializeField] private AudioMixer mixer;
-    
+
+    private void Start()
+    {
+        volumeSlider.value = GameData.Instance.CurrentVolume;
+    }
+
     public void SetVolume(float volume)
     {
         mixer.SetFloat("Volume", Mathf.Log10(volume) * 20);
-        GameManagement.Instance.ChangeVolume(Mathf.Log10(volume) * 20);
+        GameData.Instance.CurrentVolume = volume;
     }
 }
