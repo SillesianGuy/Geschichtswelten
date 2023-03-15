@@ -22,12 +22,7 @@ public class BookPuzzleFinish : MonoBehaviour
         bool result = true;
         for (int i = 0; i < correctBookOrder.Length; i++)
         {
-            if (snaps[i].GetComponent<BookSnap>().book != correctBookOrder[i])
-            {
-                result = false;
-            }
-
-            if (!correctBookOrder[i].activeSelf)
+            if (snaps[i].GetComponent<BookSnap>().book != correctBookOrder[i] || !correctBookOrder[i].activeSelf)
             {
                 result = false;
             }
