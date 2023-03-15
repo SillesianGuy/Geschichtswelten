@@ -23,6 +23,7 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
     
     public delegate void DialogEnd();
     public static event DialogEnd OnDialogEnd;
+    
     private void Awake()
     {
         if (moods)
@@ -34,49 +35,11 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
             _names = new string[_singleLine.Length];
             _selectedMoodPictures = new GameObject[_singleLine.Length];
         
-            for(int i = 0; i < _singleLine.Length; i++)
-            {
-                string[] words = _singleLine[i].Split(' ');
-                int image = -1;
-                
-                if (Int32.TryParse(words[0], out image))
-                {
-                    _names[i] = words[1];
-                
-                    for (int word = 2; word < words.Length; word++)
-                    {
-                        _dialogText[i] += word == words.Length - 1 ? words[word] : words[word] + " ";
-                    }
-                }
-                else
-                {
-                    image = -1;
-                    _names[i] = words[0];
-                
-                    for (int word = 1; word < words.Length; word++)
-                    {
-                        _dialogText[i] += word == words.Length - 1 ? words[word] : words[word] + " ";
-                    }
-                }
-                
-                if (image == -1)
-                {
-                    _selectedMoodPictures[i] = i == 0 ? _selectedMoodPictures[0] : _selectedMoodPictures[i - 1];
-                }
-                else
-                {
-                    _selectedMoodPictures[i] = moodPictures[image];
-                }
-            }
+            calculateMoodpicturesDialogtext();
 
             dialogName.text = _names[0];
             dialogBox.text = _dialogText[0];
-            
-            foreach (var moodPicture in moodPictures)
-            {
-                moodPicture.SetActive(false);
-            }
-                
+
             _selectedMoodPictures[0].SetActive(true);
         }
         else
@@ -104,7 +67,47 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
         }
     }
 
-
+    /*
+     * Reads the order of the given mood pictures and saves them in _selectedMoodPictures array.
+     * Also filters and saves the dialog text into _dialogText to be able to display the text correctly.
+     * TODO: Support Character names with multiple words like: %General Edward%
+     */
+    private void calculateMoodpicturesDialogtext()
+    {
+        for(int i = 0; i < _singleLine.Length; i++)
+        {
+            string[] words = _singleLine[i].Split(' ');
+            int image;
+                
+            if (Int32.TryParse(words[0], out image))
+            {
+                _names[i] = words[1];
+                
+                for (int word = 2; word < words.Length; word++)
+                {
+                    _dialogText[i] += word == words.Length - 1 ? words[word] : words[word] + " ";
+                }
+                _selectedMoodPictures[i] = moodPictures[image];
+            }
+            else
+            {
+                _names[i] = words[0];
+                
+                for (int word = 1; word < words.Length; word++)
+                {
+                    _dialogText[i] += word == words.Length - 1 ? words[word] : words[word] + " ";
+                }
+                
+                _selectedMoodPictures[i] = i == 0 ? _selectedMoodPictures[0] : _selectedMoodPictures[i - 1];
+            }
+        }
+        
+        foreach (var moodPicture in moodPictures)
+        {
+            moodPicture.SetActive(false);
+        }
+    }
+    
     public void OnPointerClick(PointerEventData eventData)
     {
         if (gameObject.activeSelf)
