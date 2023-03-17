@@ -11,10 +11,12 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
 {
     
     [SerializeField] private TextAsset text;
+    [SerializeField] private TextAsset[] dialogLanguages;
     [SerializeField] private TextMeshProUGUI dialogName;
     [SerializeField] private TextMeshProUGUI dialogBox;
     [SerializeField] private bool moods;
     [SerializeField] private GameObject[] moodPictures;
+    
     private int _counter = 1;
     private string[] _singleLine;
     private string[] _dialogText;
@@ -24,12 +26,31 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
     public delegate void DialogEnd();
     public static event DialogEnd OnDialogEnd;
     
-    
     private void Awake()
     {
+        SelectLanguage();
         ActivateDialog();
     }
 
+    /**
+     * Selects the correct dialog according to the selected language.
+     */
+    void SelectLanguage()
+    {
+        switch (GameData.Instance.CurrentLanguage)
+        {
+            case GameData.Language.DE:
+                text = dialogLanguages[0];
+                break;
+            case GameData.Language.EN:
+                text = dialogLanguages[1];
+                break;
+            default:
+                text = dialogLanguages[0];
+                break;
+        }
+    }
+    
     /**
      * As soon as the dialog box got activated by the DialogActivator.cs it checks if it includes mood pictures and
      * displays the first line, name and mood picture of the dialog accordingly.
@@ -135,7 +156,7 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
     /**
      * The event is always triggered as soon as the player clicks on any position of the dialog box.
      * It checks if the dialog is finished and disables any mood pictures as well as the dialog box and sets the GameData
-     * InDialog bool to false.
+     * InDialog bool to false. It also fires the OnDialogEnd event.
      * If the dialog isn't finished the new mood picture, name and text is displayed and the dialog _counter gets
      * incremented.
      */
