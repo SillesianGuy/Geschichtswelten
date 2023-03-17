@@ -9,7 +9,7 @@ public class GameData
     private List<int> _finishedDialogs = new List<int>();
     private List<Item> _items = new List<Item>();
     private float _currentVolume = 1f;
-    private Language _currentLanguage = Language.DE;
+    private Language _currentLanguage = Language.EN;
 
     private GameData()
     {

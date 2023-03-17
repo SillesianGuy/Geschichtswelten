@@ -1,0 +1,10 @@
+0 %placeholder% Good Morning, Sir!
+%General Edmund% %placeholder%. Can I help you with something?
+%placeholder% Have you seen Finn, by any chance?
+%General Edmund% Fortunately not, I just helped to prepare this vessel for my... voyage.
+1 %General Edmund% Why are you asking about him? Is he up to something again?
+%placeholder% Not that I know of, Sir. I need to borrow some lecture notes from him. Where are they heading? To Nerpy?
+0 %General Edmund% That is not the case. This time, the venue for the peace talks has been set in Redarien. Nevertheless, I ask you to report to me if you notice anything odd.
+1 %General Edmund% As you know, Finn's last stunt resulted in five casualties.
+%placeholder% Yes, sir. I would like to wish you a pleasant journey.
+0 %General Edmund% Thanks, take care of yourself, %placeholder%.

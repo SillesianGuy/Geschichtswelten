@@ -1,0 +1,2 @@
+0 %placeholder% General, I have no time to explain, we have to evacuate all people from the bridge immediately!
+1 %General Edmund% You have a lot of explaining to do afterwards!

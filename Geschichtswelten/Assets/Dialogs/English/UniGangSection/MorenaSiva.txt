@@ -1,0 +1,10 @@
+%placeholder% Als ich den Gang wieder betrat, standen die Töchter des Generals im Gang.
+%Morena% Ah %placeholder%, wir haben dich gesucht!
+%placeholder% Hey, was gibts?
+%Siva% Wir haben Finn vorhin gesehen, wie er hier irgendwas verbuddelt hat.
+%Morena% Wir wollten fragen, ob du vielleicht mehr weißt? Wir dachten, er hätte damit aufgehört.
+%placeholder% Finn hat etwas verbuddelt? Das erklärt seine dreckigen Hände…
+%placeholder% Womit genau hat er aufgehört? Löcher zu buddeln?
+%Morena% Haha…Du weißt schon, wo er manchen Dealern geholfen hat, die Waren unauffällig zu verstecken…
+%placeholder% Ach das…ne, er hat mir damals geschworen, dass er damit aufgehört hat… Wenn ich aber mehr herausfinde, sage ich euch Bescheid!
+%Siva% Super, wir sehen uns morgen wieder!

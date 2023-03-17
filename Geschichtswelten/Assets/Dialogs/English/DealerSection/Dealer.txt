@@ -1,0 +1,17 @@
+0 %placeholder% Hey Hildegard!
+3 %Hildegard% Well look who's paying me a visit again! Hi name, how you doing?
+%placeholder% Apart from the nightmares quite okay, a bit of a strange day today… How are you, Hildegard? Any news?
+%Hildegard% I'm doing great, my shop is thriving. Just got some new stuff from the Other Side yesterday, maybe you want to take a look? I also have some slightly stronger sleeping pills, if you're interested?
+%Hildegard% My crew yesterday tried their luck at Lord Wilson's house and were quite successful.
+%placeholder% Maybe you shouldn't be so loud, there's the General in the marketplace...
+0 %Hildegard% Have you seen his daughters' new jewellery? I think the general is letting things slide… Speaking of the general's daughters, did you know that the birth mother of his adopted daughter apparently had an unfortunate accident the other day?
+%Hildegard% If you ask me, I doubt it was an accident...
+%placeholder% That's really very interesting Auntie, but I'm a bit stressed today. Finn is in a really weird mood, he's acting very suspicious again. Have you heard anything?
+3 %Hildegard% If you're referring to any of my special clients, then I'm sorry to disappoint you.
+%placeholder% Anyways, do you have a shovel for me? I don't want to ruin the gloves you gave me already.
+%Hildegard% I still have one here, just take it... Oh yes, and take this too!
+0 %placeholder% What’s that?
+%Hildegard% I borrowed it from Finn once, can you just give it back to him? But before you go, you'll never believe what else I've heard about Janka the flower seller...
+2 %placeholder% Aunt Hildegard, I really have to go now...
+%Hildegard% That's all right, nobody has time to talk to me. Take your shovel and get out, but if I don't see you at my house tomorrow for a cup of tea, I'm going to be mad.
+%placeholder% Promise!

@@ -6867,12 +6867,16 @@ PrefabInstance:
       objectReference: {fileID: 4900000, guid: 6303e7ebf347bb144b904740b72afd61, type: 3}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.data[0]
       value: 
       objectReference: {fileID: 4900000, guid: 6303e7ebf347bb144b904740b72afd61, type: 3}
+    - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
+      propertyPath: dialogLanguages.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: f9d66e6db00952846b8bd9c3dbae373c, type: 3}
     - target: {fileID: 5740113210037688093, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9689,6 +9693,7 @@ MonoBehaviour:
   text: {fileID: 4900000, guid: de3480b1bc74c234792a627e79043ddc, type: 3}
   dialogLanguages:
   - {fileID: 4900000, guid: de3480b1bc74c234792a627e79043ddc, type: 3}
+  - {fileID: 4900000, guid: 924179ee916c2e845bee8b7984b824cb, type: 3}
   dialogName: {fileID: 1431465025}
   dialogBox: {fileID: 631415734}
   moods: 1
@@ -10101,12 +10106,16 @@ PrefabInstance:
       objectReference: {fileID: 4900000, guid: dd174f76272cbea4ea72f6c84081e301, type: 3}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.data[0]
       value: 
       objectReference: {fileID: 4900000, guid: dd174f76272cbea4ea72f6c84081e301, type: 3}
+    - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
+      propertyPath: dialogLanguages.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: 95666049df27083489405dcb97271199, type: 3}
     - target: {fileID: 5740113210037688093, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11405,6 +11414,7 @@ MonoBehaviour:
   text: {fileID: 4900000, guid: 0b463102d284b0343ad99ba07efdc5ee, type: 3}
   dialogLanguages:
   - {fileID: 4900000, guid: 0b463102d284b0343ad99ba07efdc5ee, type: 3}
+  - {fileID: 4900000, guid: b7c81a7d3250b5d4b883018f7262e00b, type: 3}
   dialogName: {fileID: 1374814358}
   dialogBox: {fileID: 127180261}
   moods: 0
@@ -14133,12 +14143,16 @@ PrefabInstance:
       objectReference: {fileID: 4900000, guid: 9cea00a2c67bd9745aa4c2af82d08df1, type: 3}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.data[0]
       value: 
       objectReference: {fileID: 4900000, guid: 9cea00a2c67bd9745aa4c2af82d08df1, type: 3}
+    - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
+      propertyPath: dialogLanguages.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: 4970ffc172bda624581aa499b3294e26, type: 3}
     - target: {fileID: 5740113210037688093, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -15229,6 +15243,7 @@ MonoBehaviour:
   text: {fileID: 4900000, guid: e6234afff16dc5b45aa55a2c1cea26c3, type: 3}
   dialogLanguages:
   - {fileID: 4900000, guid: e6234afff16dc5b45aa55a2c1cea26c3, type: 3}
+  - {fileID: 4900000, guid: 376deb183ff5da345a3cf07e3013682b, type: 3}
   dialogName: {fileID: 1719424508}
   dialogBox: {fileID: 1942726641}
   moods: 1
@@ -16924,12 +16939,16 @@ PrefabInstance:
       objectReference: {fileID: 4900000, guid: dae272df44f6fbe45a0585fef90e8296, type: 3}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.data[0]
       value: 
       objectReference: {fileID: 4900000, guid: dae272df44f6fbe45a0585fef90e8296, type: 3}
+    - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
+      propertyPath: dialogLanguages.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: b7606968493bdbf4cac6f76b7c9008e9, type: 3}
     - target: {fileID: 5740113210037688093, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -18964,12 +18983,16 @@ PrefabInstance:
       objectReference: {fileID: 4900000, guid: 9a2ca6b69b8f7ed44a742b6e3cd79373, type: 3}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.data[0]
       value: 
       objectReference: {fileID: 4900000, guid: 9a2ca6b69b8f7ed44a742b6e3cd79373, type: 3}
+    - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
+      propertyPath: dialogLanguages.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: c9bfac9a6b2449c4bb3007c9753dc530, type: 3}
     - target: {fileID: 5740113210037688093, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -20109,12 +20132,16 @@ PrefabInstance:
       objectReference: {fileID: 4900000, guid: 03340b4cfd242524dad9ecd365ad9d55, type: 3}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.data[0]
       value: 
       objectReference: {fileID: 4900000, guid: 03340b4cfd242524dad9ecd365ad9d55, type: 3}
+    - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
+      propertyPath: dialogLanguages.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: 1770611b4da33ad4185bd58000d2bd40, type: 3}
     - target: {fileID: 5740113210037688093, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -20298,12 +20325,16 @@ PrefabInstance:
       objectReference: {fileID: 4900000, guid: fe5924d3bbcb6ff4ea9ffb752b5434af, type: 3}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.data[0]
       value: 
       objectReference: {fileID: 4900000, guid: fe5924d3bbcb6ff4ea9ffb752b5434af, type: 3}
+    - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
+      propertyPath: dialogLanguages.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: 2985099b2211ec44eb73f5777e8989c1, type: 3}
     - target: {fileID: 5740113210037688093, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -21786,12 +21817,16 @@ PrefabInstance:
       objectReference: {fileID: 4900000, guid: 1037426c118a3e74e838ea190caee7f8, type: 3}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.data[0]
       value: 
       objectReference: {fileID: 4900000, guid: 1037426c118a3e74e838ea190caee7f8, type: 3}
+    - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
+      propertyPath: dialogLanguages.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: 7f759ace0a3d96048b666d4c85d87350, type: 3}
     - target: {fileID: 5740113210037688093, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -25696,6 +25731,7 @@ MonoBehaviour:
   text: {fileID: 4900000, guid: 1dea149ce06854f4185ecefd094a3537, type: 3}
   dialogLanguages:
   - {fileID: 4900000, guid: 1dea149ce06854f4185ecefd094a3537, type: 3}
+  - {fileID: 4900000, guid: 6fd083ce7502f214e9983fdfc3c76f78, type: 3}
   dialogName: {fileID: 44232561}
   dialogBox: {fileID: 64903884}
   moods: 1
@@ -25858,12 +25894,16 @@ PrefabInstance:
       objectReference: {fileID: 4900000, guid: a42ff5367c6e5aa4f914ea9605cb3550, type: 3}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.data[0]
       value: 
       objectReference: {fileID: 4900000, guid: a42ff5367c6e5aa4f914ea9605cb3550, type: 3}
+    - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
+      propertyPath: dialogLanguages.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: 0be6e287980fe9941a24d9330123aa91, type: 3}
     - target: {fileID: 5740113210037688093, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -26574,12 +26614,16 @@ PrefabInstance:
       objectReference: {fileID: 4900000, guid: f5aa034e42de4c94bbd5cd4ea045b4bd, type: 3}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: dialogLanguages.Array.data[0]
       value: 
       objectReference: {fileID: 4900000, guid: f5aa034e42de4c94bbd5cd4ea045b4bd, type: 3}
+    - target: {fileID: 5740113210037688092, guid: 1260eabe66b720643be106d655b3801a, type: 3}
+      propertyPath: dialogLanguages.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: cf8618a87f757a04286d5303706047e1, type: 3}
     - target: {fileID: 5740113210037688093, guid: 1260eabe66b720643be106d655b3801a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -28134,6 +28178,7 @@ MonoBehaviour:
   text: {fileID: 4900000, guid: 6f666ba7bd3845db84f5eb2453e09990, type: 3}
   dialogLanguages:
   - {fileID: 4900000, guid: 6f666ba7bd3845db84f5eb2453e09990, type: 3}
+  - {fileID: 4900000, guid: 6820a12132a32074788a83238b10a96e, type: 3}
   dialogName: {fileID: 5740113210573699260}
   dialogBox: {fileID: 5740113208884042027}
   moods: 0
@@ -28671,6 +28716,7 @@ MonoBehaviour:
   text: {fileID: 4900000, guid: 99d177e74a3e24843b567f6a03dec039, type: 3}
   dialogLanguages:
   - {fileID: 4900000, guid: 99d177e74a3e24843b567f6a03dec039, type: 3}
+  - {fileID: 4900000, guid: 205374308aa73004093ce7b009c48bda, type: 3}
   dialogName: {fileID: 5740113210149243312}
   dialogBox: {fileID: 5740113209549072423}
   moods: 1
@@ -28922,6 +28968,7 @@ MonoBehaviour:
   text: {fileID: 4900000, guid: 0127c86515878f641972b39c69b046aa, type: 3}
   dialogLanguages:
   - {fileID: 4900000, guid: 0127c86515878f641972b39c69b046aa, type: 3}
+  - {fileID: 4900000, guid: f75164d3a60f19748adda5f3cf637d21, type: 3}
   dialogName: {fileID: 5740113209530590347}
   dialogBox: {fileID: 5740113210129974556}
   moods: 0
@@ -29436,6 +29483,7 @@ MonoBehaviour:
   text: {fileID: 4900000, guid: 3f62cbb8bb7a8604a9d53363ed47c889, type: 3}
   dialogLanguages:
   - {fileID: 4900000, guid: 3f62cbb8bb7a8604a9d53363ed47c889, type: 3}
+  - {fileID: 4900000, guid: 307577c2bbe440e43a4cc207a3e72535, type: 3}
   dialogName: {fileID: 5740113208860718148}
   dialogBox: {fileID: 5740113210533582291}
   moods: 0
@@ -29519,6 +29567,7 @@ MonoBehaviour:
   text: {fileID: 4900000, guid: 3ba7c8e8f7955654ebedd50a9c20aca0, type: 3}
   dialogLanguages:
   - {fileID: 4900000, guid: 3ba7c8e8f7955654ebedd50a9c20aca0, type: 3}
+  - {fileID: 4900000, guid: 7b66bbd6b8bf4dc4c93ec9bada4d28e9, type: 3}
   dialogName: {fileID: 5740113208968679233}
   dialogBox: {fileID: 5740113210524118742}
   moods: 0
