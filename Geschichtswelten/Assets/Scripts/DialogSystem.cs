@@ -24,7 +24,17 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
     public delegate void DialogEnd();
     public static event DialogEnd OnDialogEnd;
     
+    
     private void Awake()
+    {
+        ActivateDialog();
+    }
+
+    /**
+     * As soon as the dialog box got activated by the DialogActivator.cs it checks if it includes mood pictures and
+     * displays the first line, name and mood picture of the dialog accordingly.
+     */
+    private void ActivateDialog()
     {
         if (moods)
         {
@@ -35,7 +45,7 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
             _names = new string[_singleLine.Length];
             _selectedMoodPictures = new GameObject[_singleLine.Length];
         
-            calculateMoodpicturesDialogtext();
+            CalculateMoodPicturesDialogText();
 
             dialogName.text = _names[0];
             dialogBox.text = _dialogText[0];
@@ -49,55 +59,41 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
             _singleLine = dialog.Split("\n");
             _dialogText = new string[_singleLine.Length];
             _names = new string[_singleLine.Length];
-        
-            for(int i = 0; i < _singleLine.Length; i++)
-            {
-                string[] words = _singleLine[i].Split(' ');
-            
-                _names[i] = words[0];
-            
-                for (int word = 1; word < words.Length; word++)
-                {
-                    _dialogText[i] += word == words.Length -1 ? words[word] : words[word] + " ";
-                }
-            }
+
+            CalculateDialogText();
 
             dialogName.text = _names[0];
             dialogBox.text = _dialogText[0];
         }
     }
 
-    /*
+    /**
      * Reads the order of the given mood pictures and saves them in _selectedMoodPictures array.
      * Also filters and saves the dialog text into _dialogText to be able to display the text correctly.
-     * TODO: Support Character names with multiple words like: %General Edward%
+     * Sets the correct name for the current line
      */
-    private void calculateMoodpicturesDialogtext()
+    private void CalculateMoodPicturesDialogText()
     {
         for(int i = 0; i < _singleLine.Length; i++)
         {
+            string line = _singleLine[i];
             string[] words = _singleLine[i].Split(' ');
-            int image;
-                
-            if (Int32.TryParse(words[0], out image))
+
+            if (Int32.TryParse(words[0], out var image))
             {
-                _names[i] = words[1];
+                _names[i] = GetName(line);
+                line = line.Replace("%", "");
+                _dialogText[i] = line.Substring(line.IndexOf(_names[i], StringComparison.Ordinal) + _names[i].Length + 1);
                 
-                for (int word = 2; word < words.Length; word++)
-                {
-                    _dialogText[i] += word == words.Length - 1 ? words[word] : words[word] + " ";
-                }
                 _selectedMoodPictures[i] = moodPictures[image];
             }
             else
             {
-                _names[i] = words[0];
+                _names[i] = GetName(line);
                 
-                for (int word = 1; word < words.Length; word++)
-                {
-                    _dialogText[i] += word == words.Length - 1 ? words[word] : words[word] + " ";
-                }
-                
+                line = line.Replace("%", "");
+                _dialogText[i] = line.Substring(line.IndexOf(_names[i], StringComparison.Ordinal) + _names[i].Length + 1);
+            
                 _selectedMoodPictures[i] = i == 0 ? _selectedMoodPictures[0] : _selectedMoodPictures[i - 1];
             }
         }
@@ -107,7 +103,42 @@ public class DialogSystem : MonoBehaviour, IPointerClickHandler
             moodPicture.SetActive(false);
         }
     }
+
+    /**
+     * Filters and saves the dialog text into _dialogText to be able to display the text correctly.
+     * Sets the correct name for the current line
+     */
+    private void CalculateDialogText()
+    {
+        for(int i = 0; i < _singleLine.Length; i++)
+        {
+            string line = _singleLine[i];
+            
+            _names[i] = GetName(line);
+
+            line = line.Replace("%", "");
+            _dialogText[i] = line.Substring(line.IndexOf(_names[i], StringComparison.Ordinal) + _names[i].Length + 1);
+        }
+    }
+
+    /**
+     * Returns the name included in a string. The name format is '%name%' and it has to be the first word in the text
+     * starting with a '%'.
+     */
+    private string GetName(string text)
+    {
+        string[] split = text.Split('%');
+        
+        return split[1];
+    }
     
+    /**
+     * The event is always triggered as soon as the player clicks on any position of the dialog box.
+     * It checks if the dialog is finished and disables any mood pictures as well as the dialog box and sets the GameData
+     * InDialog bool to false.
+     * If the dialog isn't finished the new mood picture, name and text is displayed and the dialog _counter gets
+     * incremented.
+     */
     public void OnPointerClick(PointerEventData eventData)
     {
         if (gameObject.activeSelf)

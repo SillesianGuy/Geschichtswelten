@@ -1,2 +1,2 @@
 0 %placeholder% General, ich habe keine Zeit zu erklären, wir müssen sofort alle Menschen von der Brücke evakuieren!
-1 General Sie müssen mir nachher viel erklären!
+1 %General Edmund% Sie müssen mir nachher viel erklären!

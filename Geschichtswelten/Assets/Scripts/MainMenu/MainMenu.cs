@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
 
     public void ChangeName()
     {
-        GameData.Instance.Name = inputField.text;
+        GameData.Instance.Name = "%" + inputField.text + "%";
     }
 
 }
