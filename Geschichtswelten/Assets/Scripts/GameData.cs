@@ -7,7 +7,6 @@ public class GameData
     private string _name = "%Riven%";
     private int _dialogID = 0;
     private List<int> _finishedDialogs = new List<int>();
-    private List<Item> _items = new List<Item>();
     private float _currentVolume = 1f;
     private Language _currentLanguage = Language.EN;
 
@@ -58,12 +57,6 @@ public class GameData
     {
         get => _finishedDialogs;
         set => _finishedDialogs = value;
-    }
-
-    public List<Item> Items
-    {
-        get => _items;
-        set => _items = value;
     }
 
     public float CurrentVolume
