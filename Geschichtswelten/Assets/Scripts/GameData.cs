@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class GameData
 {
@@ -69,5 +70,10 @@ public class GameData
     {
         get => _currentLanguage;
         set => _currentLanguage = value;
+    }
+
+    public int GetNewDialogID()
+    {
+        return DialogID++;
     }
 }
