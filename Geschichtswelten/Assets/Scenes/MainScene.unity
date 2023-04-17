@@ -176,10 +176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431332e2fc8c4504881fd2bd1d26b5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 5740113210525740992}
   dialogBoxes:
   - {fileID: 5740113210525740992}
-  tagName: 
   repeat: 1
 --- !u!114 &1152962
 MonoBehaviour:
@@ -534,10 +532,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431332e2fc8c4504881fd2bd1d26b5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 2130607918}
   dialogBoxes:
   - {fileID: 2130607918}
-  tagName: 
   repeat: 0
 --- !u!1 &31815824
 GameObject:
@@ -2885,10 +2881,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431332e2fc8c4504881fd2bd1d26b5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 5740113210122141455}
   dialogBoxes:
   - {fileID: 5740113210122141455}
-  tagName: 
   repeat: 1
 --- !u!114 &179596247
 MonoBehaviour:
@@ -2904,8 +2898,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 573424826}
   aPileOfMudNaked: {fileID: 21300000, guid: f01f5974231e35f4aae263d25da7e810, type: 3}
-  book: {fileID: 1491307728}
   dialog: {fileID: 5740113210122141455}
+  enableObjects:
+  - {fileID: 1491307728}
+  itemName: Schaufel
 --- !u!1 &180153634
 GameObject:
   m_ObjectHideFlags: 0
@@ -11164,10 +11160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431332e2fc8c4504881fd2bd1d26b5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1262410066}
   dialogBoxes:
   - {fileID: 1262410066}
-  tagName: 
   repeat: 0
 --- !u!114 &906619589
 MonoBehaviour:
@@ -15348,11 +15342,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431332e2fc8c4504881fd2bd1d26b5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 768610496}
   dialogBoxes:
   - {fileID: 768610496}
   - {fileID: 2057069565}
-  tagName: 
   repeat: 0
 --- !u!1 &1374814356
 GameObject:
@@ -16602,10 +16594,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431332e2fc8c4504881fd2bd1d26b5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 6022297}
   dialogBoxes:
   - {fileID: 6022297}
-  tagName: 
   repeat: 1
 --- !u!114 &1474588838
 MonoBehaviour:
@@ -17195,10 +17185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431332e2fc8c4504881fd2bd1d26b5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1686216768}
   dialogBoxes:
   - {fileID: 1686216768}
-  tagName: 
   repeat: 0
 --- !u!1 &1502958553
 GameObject:
@@ -17642,10 +17630,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431332e2fc8c4504881fd2bd1d26b5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 5740113208942256952}
   dialogBoxes:
   - {fileID: 5740113208942256952}
-  tagName: 
   repeat: 1
 --- !u!114 &1546304574
 MonoBehaviour:
@@ -17926,10 +17912,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431332e2fc8c4504881fd2bd1d26b5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 5740113210533041349}
   dialogBoxes:
   - {fileID: 5740113210533041349}
-  tagName: NothingToSeeHere
   repeat: 1
 --- !u!114 &1554102386
 MonoBehaviour:
@@ -21372,10 +21356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431332e2fc8c4504881fd2bd1d26b5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 294190027}
   dialogBoxes:
   - {fileID: 294190027}
-  tagName: 
   repeat: 0
 --- !u!1 &1814311463
 GameObject:
@@ -21984,10 +21966,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431332e2fc8c4504881fd2bd1d26b5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1134980160}
   dialogBoxes:
   - {fileID: 1134980160}
-  tagName: 
   repeat: 0
 --- !u!114 &1836863239
 MonoBehaviour:
@@ -22551,10 +22531,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431332e2fc8c4504881fd2bd1d26b5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 697927882}
   dialogBoxes:
   - {fileID: 697927882}
-  tagName: 
   repeat: 0
 --- !u!114 &1877752405
 MonoBehaviour:
@@ -23140,10 +23118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431332e2fc8c4504881fd2bd1d26b5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1940816921}
   dialogBoxes:
   - {fileID: 1940816921}
-  tagName: 
   repeat: 0
 --- !u!114 &1935133189
 MonoBehaviour:
