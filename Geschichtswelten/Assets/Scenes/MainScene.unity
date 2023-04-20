@@ -6372,12 +6372,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 573424826}
-  fetzen1: {fileID: 927826146}
-  fetzen2: {fileID: 146405693}
-  fetzen3: {fileID: 204889157}
-  fetzen4: {fileID: 1946578181}
-  fetzen5: {fileID: 1016097659}
-  fetzen6: {fileID: 699770833}
+  objects:
+  - {fileID: 927826146}
+  - {fileID: 146405693}
+  - {fileID: 204889157}
+  - {fileID: 1946578181}
+  - {fileID: 1016097659}
+  - {fileID: 699770833}
 --- !u!1 &487695945
 GameObject:
   m_ObjectHideFlags: 0
@@ -16556,12 +16557,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 573424826}
-  fetzen1: {fileID: 927826146}
-  fetzen2: {fileID: 146405693}
-  fetzen3: {fileID: 204889157}
-  fetzen4: {fileID: 1946578181}
-  fetzen5: {fileID: 1016097659}
-  fetzen6: {fileID: 699770833}
+  objects:
+  - {fileID: 927826146}
+  - {fileID: 146405693}
+  - {fileID: 204889157}
+  - {fileID: 1946578181}
+  - {fileID: 1016097659}
+  - {fileID: 699770833}
 --- !u!1 &1474588836
 GameObject:
   m_ObjectHideFlags: 0
@@ -24562,11 +24564,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 573424826}
-  book1: {fileID: 142853142}
-  book2: {fileID: 1656211771}
-  book3: {fileID: 855722130}
-  book4: {fileID: 31815824}
-  book5: {fileID: 1428680500}
+  objects:
+  - {fileID: 142853142}
+  - {fileID: 1656211771}
+  - {fileID: 855722130}
+  - {fileID: 31815824}
+  - {fileID: 1428680500}
 --- !u!1 &2040175406
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class BookPuzzle : MonoBehaviour, IDragHandler
     {
         transform.position = eventData.position;
         
-        float minDistance = -1;
+        float minDistance = 0;
         int index = -1;
         
         for (int i = 0; i < fixTransform.Length; i++)
@@ -25,7 +25,7 @@ public class BookPuzzle : MonoBehaviour, IDragHandler
 
             float distance = Vector2.Distance(fixPosition, currentPosition);
 
-            if (minDistance == -1f)
+            if (minDistance == 0)
             {
                 minDistance = distance;
                 index = i;
@@ -49,8 +49,7 @@ public class BookPuzzle : MonoBehaviour, IDragHandler
                 current.GetComponentInParent<BookSnap>().book = snapBookExtern;
                 
                 snapBookIntern.transform.position = fixTransform[index].position;
-                StartCoroutine(SpawnTrail(snapBookExtern, current.transform.position));
-
+                StartCoroutine(MoveBook(snapBookExtern, current.transform.position));
 
                 Transform tmp = current;
                 current = fixTransform[index];
@@ -63,7 +62,7 @@ public class BookPuzzle : MonoBehaviour, IDragHandler
         }
     }
     
-    private IEnumerator SpawnTrail(GameObject objectToMove, Vector3 targetPosition)
+    private IEnumerator MoveBook(GameObject objectToMove, Vector3 targetPosition)
     {
         float time = 0;
         Vector3 startPosition = objectToMove.transform.position;

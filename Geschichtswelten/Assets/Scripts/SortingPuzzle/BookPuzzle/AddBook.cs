@@ -1,17 +1,9 @@
-
-using UnityEngine;using UnityEngine.EventSystems;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class AddBook : MonoBehaviour, IPointerClickHandler
+public class AddBook : AddObject
 {
-    [SerializeField] private GameObject inventory;
-    [SerializeField] private GameObject book1;
-    [SerializeField] private GameObject book2;
-    [SerializeField] private GameObject book3;
-    [SerializeField] private GameObject book4;
-    [SerializeField] private GameObject book5;
-    
-    public void OnPointerClick(PointerEventData eventData)
+    public override void OnPointerClick(PointerEventData eventData)
     {
         Inventory inventoryScript = inventory.GetComponent<Inventory>();
 
@@ -23,23 +15,23 @@ public class AddBook : MonoBehaviour, IPointerClickHandler
         switch (inventoryScript.selectedItem.GetComponent<Image>().sprite.name)
         {
             case "Buch1Sprite":
-                book1.SetActive(true);
+                objects[0].SetActive(true);
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
                 break;
             case "Buch2Sprite":
-                book2.SetActive(true);
+                objects[1].SetActive(true);
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
                 break;
             case "Buch3Sprite":
-                book3.SetActive(true);
+                objects[2].SetActive(true);
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
                 break;
             case "Buch4Sprite":
-                book4.SetActive(true);
+                objects[3].SetActive(true);
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
                 break;
             case "Buch5Sprite":
-                book5.SetActive(true);
+                objects[4].SetActive(true);
                 inventoryScript.RemoveItem(inventoryScript.selectedItemId);
                 break;
         }
