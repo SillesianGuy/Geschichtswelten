@@ -13,7 +13,7 @@ public class BookPuzzleFinish : MonoBehaviour
 
     private void Awake()
     {
-        BookPuzzle.OnPuzzleSnapped += PuzzleCheck;
+        SortingPuzzle.OnPuzzleSnapped += PuzzleCheck;
         AddFetzen.OnFetzenAdded += PuzzleCheck;
     }
 
@@ -22,7 +22,7 @@ public class BookPuzzleFinish : MonoBehaviour
         bool result = true;
         for (int i = 0; i < correctBookOrder.Length; i++)
         {
-            if (snaps[i].GetComponent<BookSnap>().book != correctBookOrder[i] || !correctBookOrder[i].activeSelf)
+            if (snaps[i].GetComponent<Snap>().obj != correctBookOrder[i] || !correctBookOrder[i].activeSelf)
             {
                 result = false;
             }
@@ -30,7 +30,7 @@ public class BookPuzzleFinish : MonoBehaviour
 
         if (result)
         {
-            BookPuzzle.OnPuzzleSnapped -= PuzzleCheck;
+            SortingPuzzle.OnPuzzleSnapped -= PuzzleCheck;
             AddFetzen.OnFetzenAdded -= PuzzleCheck;
             if(gameFinish) {
                 Debug.Log("test2");
