@@ -1,10 +1,10 @@
-%placeholder% When I reentered the corridor, the general's daughters were standing in the hallway.
-%Morena% Ah, %placeholder%, we have been looking for you!
-%placeholder% Hey, what’s up?
-%Siva% We saw Finn burying something here earlier.
-%Morena% We wanted to ask if you might know something more? We thought he had stopped with it.
-%placeholder% Finn buried something? That explains his dirty hands…
-%placeholder% What exactly did he stop doing? Digging holes?
-%Morena% Haha... You know, where he helped some dealers hide the goods inconspicuously....
-%placeholder% Oh that... Nah, he swore to me at the time that he had stopped doing that... But if I find out more, I'll let you know!
-%Siva% Great, see you tomorrow!
+%placeholder% Als ich den Gang wieder betrat, standen die Töchter des Generals im Gang.
+%Morena% Ah %placeholder%, wir haben dich gesucht!
+%placeholder% Hey, was gibts?
+%Siva% Wir haben Finn vorhin gesehen, wie er hier irgendwas verbuddelt hat.
+%Morena% Wir wollten fragen, ob du vielleicht mehr weißt? Wir dachten, er hätte damit aufgehört.
+%placeholder% Finn hat etwas verbuddelt? Das erklärt seine dreckigen Hände…
+%placeholder% Womit genau hat er aufgehört? Löcher zu buddeln?
+%Morena% Haha…Du weißt schon, wo er manchen Dealern geholfen hat, die Waren unauffällig zu verstecken…
+%placeholder% Ach das…ne, er hat mir damals geschworen, dass er damit aufgehört hat… Wenn ich aber mehr herausfinde, sage ich euch Bescheid!
+%Siva% Super, wir sehen uns morgen wieder!
